@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.main-title{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem;
+}
+body{
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  height: 320px;
+  width: 360px;
+  background:  #272639;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.container{
+  margin-top: 1.4rem;
+}
+.title{
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+.inputContainer{
+  background: #353959 ;
+  border-radius: 1.4rem;
+  padding: 0.55rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.splitContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#billTotalInput,
+#tipInput{
+  font-size: 1.4rem;
+  width: 50rem;
+  border: none;
+  outline: none;
+  background: #353959 ;
+}
+
+.buttonContainer{
+  background: #8990ec;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  
+ 
+}
+.splitButton{
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -7px;
+}
+.buttonText{
+color: #353959 !important;
+align-self: center;
+}
+
+.splitAmount{
+  font-size: 1.6rem;
+  margin: 0.8rem;
+}
+
+#bottomContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.totalContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.total{
+  font-size: 2rem;
+}
+.star{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  padding-left: 1rem;
+}
+.marquee-wrapper{
+  margin-top: 3.5rem;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background: #8990ec;
+  height: 2.5rem;
+  width:100%;
+  cursor: default;
+}
+.marquee-wrapper h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  padding: 0 0.75rem;
+  letter-spacing: 1.5px;
+  animation: move-rtl 3000ms linear infinite forwards ;
+  cursor: default;
+}
+
+@keyframes move-rtl{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
